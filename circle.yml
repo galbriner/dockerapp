@@ -15,7 +15,7 @@ test:
 
 deployment:
   hub:
-    branch: [circle_ci_publish, master]
+    branch: /.*/
     commands:
       - $(aws ecr get-login --region us-east-1)
       - docker tag 054024759590.dkr.ecr.us-east-1.amazonaws.com/gal-test:dockerapp-latest
